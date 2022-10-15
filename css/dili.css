@@ -1,0 +1,6 @@
+.d1{
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    justify-content:space-around;
+}
