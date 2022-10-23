@@ -1,5 +1,7 @@
 @import "normalize.css";
 
+
+
 #d1{
     display:flex;
     width: 100%;
@@ -35,7 +37,7 @@
 #d2 img{
     margin-top: 6vh;
     margin-bottom: 6vh;
-    height: 70vh;
+    height: 30vw;
 }
 
 #d2 span h1{
@@ -82,4 +84,26 @@ a:visited{
 }
 a:hover{
     color: red;
+}
+
+@media (max-width: 540px) 
+{
+
+    #d1{
+
+        background-color: rgb(189, 136, 239);
+
+    }
+    #d1 span{
+        font-size: 25px;
+        margin-top: 2px;
+    }
+    #d2 img{
+        height: 300px;
+    }
+    
+    #pp{
+        width:450px;
+    }
+
 }

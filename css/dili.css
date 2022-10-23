@@ -87,11 +87,11 @@ body{
     position: fixed;
     bottom:0;
     background-color:rgb(192, 212, 255);
-    width:5%;
+    width:8vw;
     height: 4%;
     align-self: flex-end;
     text-align: center;
-    font-size: 20px;
+    font-size: 2.2vw;
     border: 5px solid rgb(192, 212, 255);
     border-radius: 20px;
     margin-top: 10%;
@@ -110,4 +110,59 @@ a:hover{
 
 #item{
     width: 100%;
+}
+
+@media (max-width: 540px) 
+{
+
+    #d00{
+
+        background-color: rgb(136, 137, 197);
+        margin-left: 0%;
+        width: 100%;
+
+    }
+    .d10{
+        width: 540px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+    .d10 h2{
+        font-size: 35px;
+        margin-left:0;
+
+    }
+    .d1{
+        width: 540px;
+        margin-left: 0%;
+        margin-bottom: 50px;
+    }
+    .d1 p{
+        margin-left: 3px;
+        width: 400px;
+    }
+    .pic{
+        display: flex;
+        height: 400px;
+        margin-left: 50px;
+        margin-bottom: 350px;
+        float: none;
+    }
+    .p{
+        height: 300px;
+        margin-top: 200px;
+        margin-bottom: 0%;
+    }
+    #sp{
+        margin-top: 200px;
+        margin-left: 30px;
+        width: 400px;
+        height: 300px;
+    }
+    #bo{
+        width: 70px;
+        font-size: 30px;
+    }
 }

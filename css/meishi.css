@@ -93,7 +93,7 @@ body{
 #d2 #ds1{
     display: flex;
     flex-grow: 5;
-    width: 20vw;
+    width: 25vw;
     height: 1050px;
     flex-direction: column;
     background-color: aquamarine;
@@ -106,7 +106,10 @@ body{
     background-color: rgb(127, 234, 255);
 }
 
-
+#ds2 h1{
+    font-size: 2vw;
+    font-weight: bold;
+}
 
 .fff{
     display: flex;
