@@ -86,7 +86,7 @@ body{
     display: flex;
     width: 90%;
     height: 1100px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -96,19 +96,30 @@ body{
     width: 25vw;
     height: 1050px;
     flex-direction: column;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     text-align: center;
 }
 #d2 #ds2{
-    display: block;
-    flex-grow: 3;
-    height: 300px;
-    background-color: rgb(127, 234, 255);
+    position: fixed;
+    flex-grow: 1.5;
+    height: 30vw;
+    padding: 2vw;
+    width: 20vw;
+    margin-top: 1vw;
+    margin-right: 0;
+    margin-left: 65%;
+    border: 5px solid rgb(116, 171, 219);
+    border-radius: 5vw;
+    background-color: white;
 }
 
 #ds2 h1{
     font-size: 2vw;
     font-weight: bold;
+}
+
+#ds2 p{
+    font-size: 1.5vw;
 }
 
 .fff{
@@ -139,24 +150,33 @@ body{
     margin-top: 2vh;
     margin-bottom: 2vh;
     margin-left: 3vw;
-    width: 52vw;
+    width: 57vw;
     padding: 10px;
     display: flex;
-    border: 5px solid white;
-    background-color: aliceblue;
+    border: 5px solid rgb(183, 190, 231);
+    background-color: rgb(242, 245, 247);
     border-radius:25px;
 }
+
+.change button{
+    width: 3vw;
+    font-size: 0.8vw;
+    background-color:aliceblue;
+    border: 2px solid rgb(160, 178, 238);
+    border-radius: 5px;
+}
+
 
 #bo{
     position: fixed;
     bottom:0;
     background-color:rgb(192, 212, 255);
     width:5%;
-    height: 4%;
+    height: 3%;
     align-self: flex-end;
     text-align: center;
-    font-size: 20px;
-    border: 5px solid rgb(192, 212, 255);
+    font-size: 1.3vw;
+    border: 5px solid rgb(177, 160, 238);
     border-radius: 20px;
     margin-top: 10%;
 }
@@ -168,8 +188,8 @@ body{
     bottom:0;
     background-color:rgb(192, 231, 255);
     width:100%;
-    height: 6vh;
-    font-size: 30px;
+    height: 5vh;
+    font-size: 2vw;
     font-weight: bold;
     align-self: flex-end;
     justify-content: space-around;
@@ -188,4 +208,79 @@ a:hover{
 
 #item{
     width: 100%;
+}
+
+@media (max-width: 540px) 
+{
+    #d0{
+        width: 90vw;
+        height: 14vw;
+        margin-left: 5%;
+    }
+    #d0 #head1{
+        height: 14vw;
+    }
+    #head0{
+        margin-top: 1.3vw;
+    }
+    .web-font{
+        font-size: 8vw;
+    }
+    #d0 .i1{
+        margin-top: 2vw;
+        height: 5vw;
+        background-color: rgb(255, 250, 250);
+    }
+    #d0 .i1 input{
+        margin-top: 2vw;
+        margin-left: -12.2vw;
+        width: 26vw;
+        height: 5vw;
+    }
+    #d0 .i2{
+        margin-top: 2vw;
+        height: 8vw;
+        background-color: rgb(253, 250, 250);
+    }
+    #d0 .i2 input{
+        margin-left: -7vw;
+        width: 10vw;
+        height: 6vw;
+        margin-top: 2vw;
+    }
+    #bo{
+        border: 5px solid rgb(85, 114, 241);
+    }
+    #d1{
+        height: 14vw;
+    }
+    #d2 #ds2{
+        margin-left: 70%;
+    }
+    #ds2 h1{
+        font-size: 3vw;
+    }
+    #ds2 p{
+        font-size: 2.5vw;
+    }
+    #ds1{
+        margin-left: -7vw;
+    }
+    .item{
+        width: 65vw;
+        height: 20vw;
+    }
+    .fff img{
+        margin-top: 3.5vw;
+        height: 13vw;
+    }
+    .change button{
+        width:6vw;
+        font-size: 2px;
+        margin-left: 0%;
+        margin-right: -3vw;
+    }
+    #b1{
+        font-size: 5vw;
+    }
 }

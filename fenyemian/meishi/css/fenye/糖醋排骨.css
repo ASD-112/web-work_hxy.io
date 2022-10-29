@@ -278,5 +278,10 @@ a:hover{
     }
     .font18{
         font-size: 18px;
+        
+    }
+    .r3{
+        width: 120%;
+        margin-left: -8%;
     }
 }

@@ -50,22 +50,30 @@
                 </td>
                 <td style="text-align: left;">
                     <input type="checkbox" value="体育" id="ch1"> 
-                    <label for="ch1">好吃</label>
+                    <label for="ch1">热菜</label>
                     <input type="checkbox" value="旅游" id="ch2">
                     <label for="ch2">甜党</label>
                     <input type="checkbox" value="音乐" id="ch3">
                     <label for="ch3">咸党</label>
                     <br>
                     <input type="checkbox" value="影视" id="ch4">
-                    <label for="ch4">很有用</label>
+                    <label for="ch4">饮品</label>
                     <input type="checkbox" value="追星" id="ch5">
-                    <label for="ch5">一般</label>
+                    <label for="ch5">冷盘</label>
                     <input type="checkbox" value="写作" id="ch6">
-                    <label for="ch6">有名</label>
+                    <label for="ch6">素食</label>
                 </td>
                 <!-- <td>
                     <font color="red" size="1">至少选择一项</font>
                 </td> -->
+            </tr>
+            <tr>
+                <td>
+                    <label>简介：</label>
+                </td>
+                <td style="text-align: left;">
+                    <textarea cols="20" rows="5"></textarea>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -77,18 +85,12 @@
             </tr>
             <tr>
                 <td>
-                    <label>内容：</label>
-                </td>
-                <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <label>材料：</label>
                 </td>
                 <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
+                    <textarea cols="10" rows="2" placeholder="材料名"></textarea>
+                    <textarea cols="10" rows="2" placeholder="材料量"></textarea>
+                    <button >增加</button>
                 </td>
             </tr>
             <tr>
@@ -99,19 +101,23 @@
                     <textarea cols="20" rows="5"></textarea>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label>菜品特色：</label>
+                </td>
+                <td style="text-align: left;">
+                    <textarea cols="20" rows="5"></textarea>
+                </td>
+            </tr>
         </table>
         </div>
         </div>      
         <hr color="black" width="600" size="2">
-        <table>
-            <tr rowspan="3" style="text-align: center;">  
-                <td width="1100">
-                <input type="submit" value="确认">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="reset" value="重置">
-                </td>
-            </tr>
-        </table>
+        <div class="but">
+            <input type="submit" value="确认" >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="重置">
+        </div>
       
         </form>
     </body>
