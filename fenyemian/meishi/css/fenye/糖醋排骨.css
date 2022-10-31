@@ -157,12 +157,26 @@ svg{
 
 .r3{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 93%;
     margin-top: -2%;
-    height: 300px;
+    height: auto;
     background-color: white;
     border: 5px solid rgba(49, 119, 189, 0.607);
     border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.r3 p{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.r3 h1{
+    font-size: 1.9vw;
 }
 
 #method .cailiao{
@@ -281,7 +295,15 @@ a:hover{
         
     }
     .r3{
-        width: 120%;
+        width: 113%;
         margin-left: -8%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .r3 p{
+        font-size: 4vw;
+    }
+    .r3 h1{
+        font-size: 6vw;
     }
 }

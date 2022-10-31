@@ -139,6 +139,7 @@ body{
 
 .fff img{
     height: 13vw;
+    width: 14vw;
 }
 .fff p{
     margin-left: 2vw;
@@ -273,6 +274,7 @@ a:hover{
     .fff img{
         margin-top: 3.5vw;
         height: 13vw;
+        width: 14vw;
     }
     .change button{
         width:6vw;
