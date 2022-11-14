@@ -3,6 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <link rel="stylesheet" type="text/css" href="css/edit.css">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
         <title>美食特产编辑页</title>
     </head>
     <body>
@@ -85,16 +86,6 @@
             </tr>
             <tr>
                 <td>
-                    <label>材料：</label>
-                </td>
-                <td style="text-align: left;">
-                    <textarea cols="10" rows="2" placeholder="材料名"></textarea>
-                    <textarea cols="10" rows="2" placeholder="材料量"></textarea>
-                    <button >增加</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <label>制作方式：</label>
                 </td>
                 <td style="text-align: left;">
@@ -109,6 +100,27 @@
                     <textarea cols="20" rows="5"></textarea>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label>材料：</label>
+                </td>
+                <td style="text-align: left;">
+                    <label>材料名</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>材料量</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="increase" onclick="addr()">增加</button>
+                </td>
+            </tr>
+            <tr id="be" class="cl">
+                <td></td>
+                <td>
+                    <textarea cols="10" rows="1" placeholder="请输入材料名"></textarea>
+                    <textarea cols="10" rows="1" placeholder="请输入材料量"></textarea>
+                    &nbsp;&nbsp;
+                    <button class="delete" onclick='der(this)'>删除</button>
+                </td>
+            </tr>
         </table>
         </div>
         </div>      
@@ -121,4 +133,27 @@
       
         </form>
     </body>
+    <script  type="text/javascript">
+        var num = 0;
+        function addr(){
+            num+=1;
+            $("#t1").append(
+                "<tr class='cl'>"+
+                "<td></td>"+
+                "<td>"+
+                "<textarea cols='10' rows='1' placeholder='请输入材料名'></textarea>"+
+                "&nbsp;"+
+                "<textarea cols='10' rows='1' placeholder='请输入材料量'></textarea>"+
+                "&nbsp;&nbsp;&nbsp;&nbsp;"+  
+                "<button class='delete' onclick='der(this)'>删除</button>"+
+                "</td>"+
+                "</tr>"
+            
+            );
+        }
+        function der(o){
+            num-=1;
+            $(o).parent().parent().remove();
+        }
+    </script>
 </html>
