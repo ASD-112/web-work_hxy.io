@@ -1,7 +1,24 @@
 @import "normalize.css";
 
+header{
+    display: flex;
+    justify-content:space-between;
+}
 
+header a{
+    font-size: 1vw;
+}
 
+header a:link{
+    color: rgb(22, 21, 21);
+}
+
+header a:visited{
+    color:rgb(17, 16, 16);
+}
+header a:hover{
+    color: rgb(69, 39, 186);
+}
 #d1{
     display:flex;
     width: 100%;
@@ -121,11 +138,11 @@ a{
 }
 
 a:link{
-    color: blue;
+    color: white;
 }
 
 a:visited{
-    color:blue;
+    color:white;
 }
 a:hover{
     color: red;

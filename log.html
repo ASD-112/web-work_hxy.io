@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/log.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <title>log-in</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <!-- 注册 -->
+		<form action="" method="post" class="register-box hidden">
+			<h1>register</h1>
+			<input type="text" placeholder="用户名" name="username">
+			<input type="password" placeholder="密码" name="password" id="pw1">
+			<!-- <input type="password" placeholder="确认密码" name="password" id="pw2"> -->
+			<input type="submit" name="" class="but" id="reg" value="注册" />
+		</form>
+		<!-- 登录 -->
+            <form action="" method="post" class="login-box">
+            	<h1>login</h1>
+            	<input type="text" placeholder="用户名" name="username">
+            	<input type="password" placeholder="密码" name="password">
+            	<input type="submit" name="" class="but" id="log" value="登录" />
+            </form>
+        </div>
+        <div class="con-box left">
+            <h2>欢迎来到<span>杭州介绍网页</span></h2>
+            <p>快来<span>参观</span>吧</p>
+            <img src="./static/04.jpg" alt="">
+            <p>已有账号</p>
+            <button id="login">去登录</button>
+        </div>
+        <div class="con-box right">
+            <h2>欢迎来到<span>杭州介绍网页</span></h2>
+            <p>快来<span>参观</span>吧</p>
+            <img src="./static/04.jpg" alt="">
+            <p>没有账号</p>
+            <button id="register">去注册</button>
+        </div>
+    </div>
+    <a href="index.html"><div id="bo">back</div></a>
+    <script type="text/javascript" src="js/log.js"></script> 
+</body>
+</html>
