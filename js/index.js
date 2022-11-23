@@ -1,3 +1,22 @@
+window.onload = function (){
+	head = $('header')
+	var cookie_user=document.cookie.indexOf('User');//获取指定名字的cookie的字符串
+	if(cookie_user!=-1)//如果在cookie字符串中找到了这个cookie
+	{
+		$("#log1").remove();
+		head.append(
+			'<a href="log.html" id="exit"><h1>'+ cookie_user +' | 退出</h1></a>'
+		);
+	}
+	else
+	{
+		$("#log1").remove();
+		head.append(
+			'<a href="log.html" id="log1"><h1>用户 | 登录</h1></a>'
+		);
+	}
+}
+
 $(function() {
 	var cur, pre, next;
 	var imgDoms = $('.imgitem');

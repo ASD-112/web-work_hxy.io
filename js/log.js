@@ -20,7 +20,38 @@ let log=document.getElementById('log')
 let reg=document.getElementById('reg')
 //登录按钮
 log.addEventListener('click',()=>{
-    alert("登录被触发");
+    var user =  $("#user2");
+    var password = $("#pw2");
+    text_u = user.val();
+    text_pw = password.val();
+    pw1 = JSON.parse(window.localStorage.getItem(text_u));
+    if(pw1 == text_pw)
+    {
+        alert("登录成功");
+        //写入cookies
+        document.cookie = 'User' +'='+ text_u +"; max-age="+(60*60*24);
+        document.getElementById("bo").click();
+    }
+    else
+    {
+        alert("用户不存在");
+    }
 })
 
 //注册按钮
+reg.addEventListener('click',()=>{
+    var user =  $("#user1");
+    var password = $("#pw1");
+    text_u = user.val();
+    text_pw = password.val();
+    if(text_u!=''&&text_pw!='')
+    {
+        window.localStorage.setItem(text_u, text_pw);
+        alert("注册成功");
+        window.location.reload();
+    }
+    else
+    {
+        alert("请补全信息")
+    }
+})
