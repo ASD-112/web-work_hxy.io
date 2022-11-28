@@ -21,11 +21,17 @@ $(document).ready(function (){
                             '</div>'+
                         '</a>'+ 
                         '<div class="change">'+
-                                '<button>del</button>'+
+                                '<button class="del">del</button>'+
                                 '<button onclick="window.open('+ "'./edit.html'" + ')">edit</button>'+
                         '</div>'+
             '</span>'
         )
         }
     }
+})
+
+$(".del").addEventListener('click',()=>{
+    var del =  $(".del");
+    del.parent().parent().remove();
+    
 })
