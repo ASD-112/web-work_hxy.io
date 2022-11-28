@@ -29,7 +29,7 @@ log.addEventListener('click',()=>{
     {
         alert("登录成功");
         //写入cookies
-        document.cookie = 'User' +'='+ text_u +"; max-age="+(60*60*24);
+        document.cookie = 'User' +'='+ text_u +";";
         document.getElementById("bo").click();
     }
     else

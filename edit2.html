@@ -11,26 +11,24 @@
     <fieldset>
 		<legend>名字</legend>
 			<input type="text" name="textTest" maxlength="9"
-			size="20"/>
+			size="20" class="textname"/>
 	</fieldset>
     <fieldset>
 		<legend>简介</legend>
 			<textarea name="textareaTest"
 				cols="20"
-				rows="10" >
+				rows="10" class="content">
 			</textarea>
 	</fieldset>
     <fieldset>
 		<legend>图片</legend>
-			<input type="file" name="fileTest" size="30" />
+			<input type="file" name="fileTest" size="30" id="upload_file"/>
 			<!-- <input type="button" value="选择图片" onclick="iknow('file')"> -->
 	</fieldset>
 	</br>
-    <button> 提交</button>
+    <button onclick="button()"> 提交</button>
+	<a id="back11" href="./meishi.html"></a>
 </body>
-<script>
-	
-
-</script>
-
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/edit2.js"></script>
 </html>
