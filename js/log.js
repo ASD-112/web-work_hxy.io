@@ -24,7 +24,8 @@ log.addEventListener('click',()=>{
     var password = $("#pw2");
     text_u = user.val();
     text_pw = password.val();
-    pw1 = JSON.parse(window.localStorage.getItem(text_u));
+    console.log(window.localStorage.getItem(text_u))
+    pw1 = window.localStorage.getItem(text_u);
     if(pw1 == text_pw)
     {
         alert("登录成功");

@@ -20,7 +20,7 @@
                     <label>标题：</label>
                 </td>
                 <td style="text-align: left;" width="500">
-                    <input type="text" placeholder="请输入标题">
+                    <input type="text" placeholder="请输入标题" class = "name">
                 </td>
                 <!-- <td>
                     <font color="red" size="1">标题长度应该大于5字，小于15字</font>
@@ -31,7 +31,15 @@
                     <label>评分：</label>
                 </td>
                 <td style="text-align: left;" width="500">
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" class="score">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>图片链接：</label>
+                </td>
+                <td style="text-align: left;" width="500">
+                    <input type="text" placeholder="" class="img_url">
                 </td>
             </tr>
             <tr>
@@ -39,9 +47,9 @@
                     <label>类别：</label>
                 </td>
                 <td style="text-align: left;">
-                    <input type="radio" name="type1" id="r1" value="xinwen" checked>
+                    <input type="radio" name="type" id="r1" value="美食" checked>
                     <label for="r1">美食</label>
-                    <input type="radio" name="type2" id="r2" value="xianshi">
+                    <input type="radio" name="type" id="r2" value="特产">
                     <label for="r2">特产</label>
                 </td>
             </tr>
@@ -50,18 +58,18 @@
                     <label>标签：</label>
                 </td>
                 <td style="text-align: left;">
-                    <input type="checkbox" value="体育" id="ch1"> 
+                    <input type="checkbox" value="热菜" id="ch1"> 
                     <label for="ch1">热菜</label>
-                    <input type="checkbox" value="旅游" id="ch2">
+                    <input type="checkbox" value="甜党" id="ch2">
                     <label for="ch2">甜党</label>
-                    <input type="checkbox" value="音乐" id="ch3">
+                    <input type="checkbox" value="咸党" id="ch3">
                     <label for="ch3">咸党</label>
                     <br>
-                    <input type="checkbox" value="影视" id="ch4">
+                    <input type="checkbox" value="饮品" id="ch4">
                     <label for="ch4">饮品</label>
-                    <input type="checkbox" value="追星" id="ch5">
+                    <input type="checkbox" value="冷盘" id="ch5">
                     <label for="ch5">冷盘</label>
-                    <input type="checkbox" value="写作" id="ch6">
+                    <input type="checkbox" value="素食" id="ch6">
                     <label for="ch6">素食</label>
                 </td>
                 <!-- <td>
@@ -73,7 +81,7 @@
                     <label>简介：</label>
                 </td>
                 <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
+                    <textarea cols="20" rows="5" class="intro" ></textarea>
                 </td>
             </tr>
             <tr>
@@ -81,7 +89,7 @@
                     <label>来源或历史故事：</label>
                 </td>
                 <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
+                    <textarea cols="20" rows="5" class="history"></textarea>
                 </td>
             </tr>
             <tr>
@@ -89,7 +97,15 @@
                     <label>制作方式：</label>
                 </td>
                 <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
+                    <textarea cols="20" rows="5" class="make"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>制作技巧：</label>
+                </td>
+                <td style="text-align: left;">
+                    <textarea cols="20" rows="5" class="make2"></textarea>
                 </td>
             </tr>
             <tr>
@@ -97,7 +113,7 @@
                     <label>菜品特色：</label>
                 </td>
                 <td style="text-align: left;">
-                    <textarea cols="20" rows="5"></textarea>
+                    <textarea cols="20" rows="5" class="feature"></textarea>
                 </td>
             </tr>
             <tr>
@@ -108,17 +124,17 @@
                     <label>材料名</label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>材料量</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button id="increase" onclick="addr()">增加</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" id="increase" onclick="addr()">增加</button>
                 </td>
             </tr>
             <tr id="be" class="cl">
                 <td></td>
                 <td>
-                    <textarea cols="10" rows="1" placeholder="请输入材料名"></textarea>
-                    <textarea cols="10" rows="1" placeholder="请输入材料量"></textarea>
+                    <textarea cols="12" rows="1" placeholder="请输入材料名" name="t1"></textarea>
+                    <textarea cols="12" rows="1" placeholder="请输入材料量" name="t2"></textarea>
                     &nbsp;&nbsp;
-                    <button class="delete" onclick='der(this)'>删除</button>
+                    <button type="button" class="delete" onclick='der(this)'>删除</button>
                 </td>
             </tr>
         </table>
@@ -126,34 +142,12 @@
         </div>      
         <hr color="black" width="600" size="2">
         <div class="but">
-            <input type="submit" value="确认" >
+            <input type="button" value="确认" onclick="button()">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="reset" value="重置">
         </div>
-      
         </form>
+        <a href="meishi.html" id="back111"></a>
     </body>
-    <script  type="text/javascript">
-        var num = 0;
-        function addr(){
-            num+=1;
-            $("#t1").append(
-                "<tr class='cl'>"+
-                "<td></td>"+
-                "<td>"+
-                "<textarea cols='10' rows='1' placeholder='请输入材料名'></textarea>"+
-                "&nbsp;"+
-                "<textarea cols='10' rows='1' placeholder='请输入材料量'></textarea>"+
-                "&nbsp;&nbsp;&nbsp;&nbsp;"+  
-                "<button class='delete' onclick='der(this)'>删除</button>"+
-                "</td>"+
-                "</tr>"
-            
-            );
-        }
-        function der(o){
-            num-=1;
-            $(o).parent().parent().remove();
-        }
-    </script>
+    <script type="text/javascript" src="js/edit.js"></script>
 </html>

@@ -143,22 +143,6 @@
     </div>
     <div id="bo"><a href="../../meishi.html">back</a></div>
 </body>
+<script type="text/javascript" src="./js/001.js"></script>
 
-<script type="text/javascript">
-    var say = $("#say");
-    function sub(now){
-        text1 = say.val();
-        if(text1 == '')
-            alert("不能为空");
-        else{
-            tbody=$(now).parent().parent();
-            tbody.append(
-                '</br>'+
-                text1+
-                '</br>'+
-                '<hr color="black" width="100%" size="20">'
-            );
-        }
-    }
-</script>
 </html>

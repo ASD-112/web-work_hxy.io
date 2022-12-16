@@ -1,0 +1,19 @@
+{
+    "user":[
+
+    ],
+    "api1": [
+        {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+        }
+    ],
+    "api2": [
+        {
+          "id": 1,
+          "title": "json-server",
+          "author": "typicode"
+        }
+      ]
+}

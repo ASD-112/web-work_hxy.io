@@ -7,18 +7,29 @@ function button(e) {
         var file = document.getElementById('upload_file').files[0];
         var r = new FileReader();  //本地预览
 
-        r.readAsDataURL(file);    //Base64
-        r.onload = function(){
-            str1=r.result;
-            console.info(str1);
-            return 0;
-        }
+        // r.readAsDataURL(file);    //Base64
+        // r.onload = function(){
+        //     str1=r.result;
+        //     console.info(str1);
+        //     return 0;
+        // }
     }
+   
 
     // document.getElementById("upload_file").onchange = function () {
     //     gen_base64();
     // };
     gen_base64();
+
+    var adr = $(".address").val()
+
+    console.log("1");
+    if(!textname||!content||!adr)
+    {
+        alert("数据不全");
+    }
+    else
+    {
     var num0 = window.localStorage.getItem("num") 
     if(num0)
     {
@@ -31,6 +42,9 @@ function button(e) {
     console.log(num)
     window.localStorage.setItem("textname"+num, textname);
     window.localStorage.setItem("content"+num, content);
-    window.localStorage.setItem("image"+num, str1);
+    // window.localStorage.setItem("image"+num, str1);
+    window.localStorage.setItem("img_url"+num, adr);
+    console.log(adr)
     document.getElementById("back11").click();
+    }
 }
