@@ -137,6 +137,7 @@ svg{
 {
     color: #61666D;
     z-index: 10;
+    width: 50px;
     height: 28px;
     line-height: 28px;
     display: inline-block;

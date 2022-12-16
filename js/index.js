@@ -93,3 +93,11 @@ function ex1(){
 			'<a href="log.html" id="log1"><h1>用户 | 登录</h1></a>'
 	);
 }
+
+var c=0;
+function turn()
+{
+	c=c+1;
+	document.getElementById("next").click();
+}
+setInterval("turn()","7000");

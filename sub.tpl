@@ -99,12 +99,5 @@
             <%= feature %>
         </div>
     </div>
-    <div class="r4">
-        <h1>评论：</h1>
-        <textarea id="say" cols="100" rows="5"></textarea>
-        <button id="sub" onclick="sub(this)">提交</button>
-    </div>
-    </br>
-    <hr color="black" width="100%" size="10">
 </div>
-<div id="bo"><a href="meishi.html">back</a></div>
+

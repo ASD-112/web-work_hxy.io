@@ -58,6 +58,8 @@ function del(o){
         }
     }
     localStorage.setItem("web", JSON.stringify(webJson))
+    var cname="chat"+num;
+    window.localStorage.removeItem(cname);
     item.remove();
 
 }
