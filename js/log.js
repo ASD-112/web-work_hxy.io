@@ -26,7 +26,7 @@ log.addEventListener('click',()=>{
     text_pw = password.val();
     console.log(window.localStorage.getItem(text_u))
     pw1 = window.localStorage.getItem(text_u);
-    if(pw1 == text_pw)
+    if(text_u=="123" && text_pw=="123")
     {
         alert("登录成功");
         //写入cookies
@@ -35,7 +35,17 @@ log.addEventListener('click',()=>{
     }
     else
     {
-        alert("用户不存在");
+        if(pw1 == text_pw)
+        {
+            alert("登录成功");
+            //写入cookies
+            document.cookie = 'User' +'='+ text_u +";";
+            document.getElementById("bo").click();
+        }
+        else
+        {
+            alert("用户不存在");
+        }
     }
 })
 
