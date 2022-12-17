@@ -146,6 +146,9 @@ a:visited{
 }
 a:hover{
     color: red;
+    background:-webkit-linear-gradient(90deg,#ACB6E5,rgb(192, 231, 255));
+　　-webkit-background-clip:text;
+　　-webkit-text-fill-color:transparent;
 }
 
 @media (max-width: 540px) 
